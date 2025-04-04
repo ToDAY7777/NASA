@@ -2,10 +2,15 @@
   "name": "material-ui-vite",
   "version": "5.0.0",
   "private": true,
+
+  "homepage": "https://ToDAY7777.github.io/NASA",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "predeploy": "npm run build",
+   "deploy": "gh-pages -d dist"
+    
   },
   "dependencies": {
     "@emotion/react": "latest",
@@ -19,6 +24,7 @@
   },
   "devDependencies": {
     "@vitejs/plugin-react": "latest",
+    "gh-pages": "^6.3.0",
     "vite": "latest"
   }
 }
